@@ -1,0 +1,131 @@
+@charset "UTF-8";
+
+* {/* 枠線・うち余白を込みで計算*/
+    box-sizing: border-box;
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+main img {
+    width: 100%;
+}
+
+section {
+    margin-bottom: 60px;
+}
+
+article {
+    margin: 30px;
+}
+
+#cancel-tbl {
+    width: 100%;
+    margin: 30px 0;
+}
+
+#cancel-tbl caption {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+#cancel-tbl tr th {
+    width: 33%
+}
+
+#cancel-tbl tr td {
+    font-size: 1.3rem;
+}
+
+.btn {
+    margin: 30px 10%;
+}
+
+tr {
+    height: 60px;
+}
+
+option {
+    text-align: center;
+}
+
+#number {
+    width: 80%;
+}
+
+select {
+    width: 30%;
+}
+
+#data-form p {
+    width: 80%;
+}
+
+.td1 {
+    width: 37%
+}
+
+.td2 {
+    width: 63%
+}
+
+
+/* レスポンシブ対応 */
+/* 最小幅600px以上のデザイン */
+/* メディアクエリ */
+/* ブレイクポイント */
+@media (min-width: 600px) {
+    main {
+        margin: 35px 10%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    section {
+        width: 40%;
+        margin: 0;
+    }
+    
+    article {
+    margin: 0 0 2rem;
+    }
+    
+/*
+    article {
+        margin: 0;
+        padding: 0;
+        width: 40%;
+    }
+    
+    article h2 {
+        margin-top: 30px;
+    }
+    
+    article p {
+        font-size: 18px;;
+    }
+*/
+/*
+    #data-form {
+    height: 300px;
+    }
+*/
+
+    .form-tbl {
+        width: 60%;
+        margin-left: 30px;
+    }
+
+    .btn {
+        width: 50%;
+        margin: 40px 25% 50px;
+    }
+
+    select {
+        width: 20%;
+    }
+
+    .tbl tr th {
+        font-size: 20px;
+    }
+}

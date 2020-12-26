@@ -1,0 +1,89 @@
+@charset "UTF-8";
+
+* {/* 枠線・うち余白を込みで計算*/
+    box-sizing: border-box;
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+main p {
+    margin: 30px;
+}
+
+.tbl {
+    font-size: 0.8rem;
+    margin: 20px auto 50px;
+}
+
+#pack-tbl tr {
+    height: 35px;
+}
+
+#rec-table input {
+    margin: 10px;
+}
+
+h2 {
+    text-align: center;
+    width: 80%;
+}
+
+#rec-table tr {
+    height: 40px;
+}
+
+#rec-table th {
+    font-size: 0.8rem;
+}
+
+.btn {
+    margin-bottom: 50px
+}
+
+
+
+/* レスポンシブ対応 */
+/* 最小幅600px以上のデザイン */
+/* メディアクエリ */
+/* ブレイクポイント */
+@media (min-width: 600px) {
+    .rec-guide {
+        display: flex;
+    }
+    
+    .rec-guide img {
+        width: 50%;
+        order: 2;
+    }
+    
+    main {
+        width: 80%;
+        margin-top: 30px;
+    }
+    
+    main h2 {
+        margin-top: 30px;
+        font-size: 1.4rem;
+    }
+    
+    .tbl {
+        font-size: 1.2rem;
+    }
+    
+    .tbl caption {
+        font-size: 1rem;
+    }
+    
+    main p {
+        font-size: 1.1rem;
+    }
+    
+    #rec-table th {
+    font-size: 1.2rem;
+    }
+    
+    .btn {
+        width: 50%;
+        margin-left: 25%;
+    }
+}
