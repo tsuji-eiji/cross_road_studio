@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/contact.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap" rel="stylesheet">
-    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -72,7 +72,7 @@
             </article>
         </section>
         <div class="form-tbl">
-            <form action="" id="data-form">
+            <form action="sent.html" id="data-form">
                 <table class="tbl">
                     <tr>
                         <th class="td1">
@@ -92,19 +92,15 @@
                     </tr>
                 </table>
                 <button type="button" class="btn" onclick="search()">
-                会員情報呼出
+                    会員情報呼出
                 </button>
-<!--
-            </form>
-            <form action="" method="post" class="reserve-form">
--->
                 <table class="tbl">
                     <tr>
                         <th class="td1">
                             <label for="name">氏名</label>
                         </th>
                         <td class="td2">
-                            <input type="text" id="name" required>
+                            <input type="text" id="name">
                         </td>
                     </tr>
                     <tr>
@@ -112,7 +108,7 @@
                             <label for="tel">電話番号</label>
                         </th>
                         <td>
-                            <input type="text" id="tel" required>
+                            <input type="text" id="tel">
                         </td>
                     </tr>
                     <tr>
@@ -120,7 +116,7 @@
                             <label for="date">日程</label>
                         </th>
                         <td>
-                            <input type="date" class="date" id="date" required>
+                            <input type="date" class="date" id="date">
                         </td>
                     </tr>
                     <tr>
@@ -128,7 +124,7 @@
                             <label for="studio">希望スタジオ</label>
                         </th>
                         <td>
-                            <select name="room" id="studio" required>
+                            <select name="room" id="studio">
                                 <option value="a">Ast</option>
                                 <option value="b">Bst</option>
                                 <option value="c">Cst</option>
@@ -140,7 +136,7 @@
                             <label for="start">開始時刻</label>
                         </th>
                         <td>
-                            <select name="start" id="start" required>
+                            <select name="start" id="start">
                                 <option value="0" id="0">0</option>
                                 <option value="1" id="1">1</option>
                                 <option value="2" id="2">2</option>
@@ -174,7 +170,7 @@
                             <label for="number">ご利用人数</label>
                         </th>
                         <td>
-                            <input type="text" id="number" required>名
+                            <input type="number" id="number">名
                         </td>
                     </tr>
                     <tr>
@@ -182,7 +178,7 @@
                             <label for="time">ご利用時間</label>
                         </th>
                         <td>
-                            <select name="time" id="time" required>
+                            <select name="time" id="time">
                                 <option value="1">1</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
@@ -196,7 +192,7 @@
                         </td>
                     </tr>
                 </table>
-                <button type="submit" class="btn" form="data-form" onclick="location.href='sent.html'">送信</button>
+                                <button type="submit" class="btn" form="data-form" onclick="return reserve()" onsubmit="sent.html">送信</button>
             </form>
         </div>
     </main>
@@ -208,7 +204,13 @@
         </small>
     </footer>
     <!--js読み込み-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!--    <script src="/js/jquery.min.js"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/libphonenumber-js/1.1.10/libphonenumber-js.min.js"></script>
+    <script type="text/javascript" src="js/jquery.validate.min.js"></script>
     <script type="text/javascript" src="js/contact.js"></script>
+    
+    
 </body>
 
 </html>

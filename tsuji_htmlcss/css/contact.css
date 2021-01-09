@@ -48,10 +48,6 @@ option {
     text-align: center;
 }
 
-#number {
-    width: 80%;
-}
-
 select {
     width: 30%;
 }
@@ -90,26 +86,7 @@ select {
     margin: 0 0 2rem;
     }
     
-/*
-    article {
-        margin: 0;
-        padding: 0;
-        width: 40%;
-    }
-    
-    article h2 {
-        margin-top: 30px;
-    }
-    
-    article p {
-        font-size: 18px;;
-    }
-*/
-/*
-    #data-form {
-    height: 300px;
-    }
-*/
+
 
     .form-tbl {
         width: 60%;

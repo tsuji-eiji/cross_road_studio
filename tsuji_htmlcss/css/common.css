@@ -61,13 +61,13 @@ nav ul li a,
     display: block;
     padding: 0.8rem;
     text-decoration: none;
-    color: #fff;
+    color: #F7F6FA;
     background-color: #1D0E0B;
 }
 
 
 #sub-title {
-    color: #fff;
+    color: #F7F6FA;
     text-align: center;
     padding: 50px 0;
     font-size: 1.2em;
@@ -148,14 +148,14 @@ select {
 .tbl td input {
     background-color: #fff;
     border: 1px solid #333;
-    width: 85%;
+    width: 70%;
     margin: auto;
 }
 
 .tbl td textarea {
     background-color: #fff;
     border: 1px solid #333;
-    width: 85%;
+    width: 70%;
     margin: 7%;
     resize: none;
 }
@@ -163,14 +163,6 @@ select {
 .tbl caption {
     font-size: 1rem;
     text-align: right;
-}
-
-.empty-tbl {
-    width: 50%;
-    height: 1.8px;
-    background-color: #555;
-    content: "";
-    display: block;
 }
 
 footer {
@@ -186,6 +178,10 @@ footer {
 /* メディアクエリ */
 /* ブレイクポイント */
 @media (min-width: 600px) {
+    
+    #title {
+        display: flex;
+    }
 
     #title a {
         display: flex;
@@ -241,27 +237,10 @@ footer {
         border-color: #444;
         color: #444;
     }
-
-    .btn::before,
-    .btn::after {
-        top: 0;
-        width: 50%;
-        height: 100%;
-        background-color: #333;
-    }
-
-    .btn::before {
-        right: 0;
-    }
-
-    .btn::after {
-        left: 0;
-    }
-
-    .btn:hover::before,
-    .btn:hover::after {
-        width: 0;
-        background-color: #444;
+    
+    footer {
+        padding-bottom: 0;
+        padding: 15px 0;
     }
 
 }

@@ -50,7 +50,7 @@
                     ※エンジニアが1名帯同します。
                 </p>
                 <table id="pack-tbl" class="tbl">
-                   <caption>※全て税込み</caption>
+                    <caption>※全て税込み</caption>
                     <tr>
                         <th>サービス名</th>
                         <th>基本料金</th>
@@ -80,41 +80,43 @@
             </div>
         </div>
         <h2>レコーディングについての<br>お問い合わせ</h2>
-        <table id="rec-table" class="tbl">
-            <tr>
-                <th>
-                    <label for="name">氏名</label>
-                </th>
-                <td>
-                    <input type="text" id="name">
-                </td>
-            </tr>
-            <tr>
-                <th>
-                    <label for="tel">電話番号</label>
-                </th>
-                <td>
-                    <input type="tel" id="tel">
-                </td>
-            </tr>
-            <tr>
-                <th>
-                    <label for="mail">メールアドレス</label>
-                </th>
-                <td>
-                    <input type="email" id="mail">
-                </td>
-            </tr>
-            <tr>
-                <th>
-                    <label for="content">内容</label>
-                </th>
-                <td>
-                    <textarea name="content" cols="8" rows="10" id="content"></textarea>
-                </td>
-            </tr>
-        </table>
-        <button type="button" class="btn" onclick="location.href='confirm.html'">送信</button>
+        <form action="">
+            <table id="rec-table" class="tbl">
+                <tr>
+                    <th>
+                        <label for="name">氏名</label>
+                    </th>
+                    <td>
+                        <input type="text" id="name">
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label for="tel">電話番号</label>
+                    </th>
+                    <td>
+                        <input type="tel" id="tel">
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label for="mail">メールアドレス</label>
+                    </th>
+                    <td>
+                        <input type="email" id="mail">
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label for="content">内容</label>
+                    </th>
+                    <td>
+                        <textarea name="content" cols="8" rows="10" id="content"></textarea>
+                    </td>
+                </tr>
+            </table>
+            <button type="submit" class="btn" form="rec-form" onclick="return reserve()">送信</button>
+        </form>
     </main>
     <footer>
         <small>
@@ -123,4 +125,8 @@
             &copy; 2020 CROSS ROAD STUDIO
         </small>
     </footer>
+    <!--js読み込み-->
+    <script type="text/javascript" src="js/recording.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/libphonenumber-js/1.1.10/libphonenumber-js.min.js"></script>
+    <script type="text/javascript" src="js/jquery.validate.min.js"></script>
 </body></html>
