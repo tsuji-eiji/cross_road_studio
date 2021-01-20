@@ -1,0 +1,85 @@
+@charset "UTF-8";
+
+* {/* 枠線・うち余白を込みで計算*/
+    box-sizing: border-box;
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+}
+
+#content img {
+    order: 1;
+}
+
+#content section {
+    order: 2;
+}
+
+article {
+    margin: 30px 20px;
+}
+
+article p {
+    padding-left: 1em;
+}
+
+#map {
+    margin: 5%;
+/*    border: 1px solid #333;*/
+/*    width: 95%;*/
+}
+
+#map h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#map iframe {
+    width: 100%;
+}
+
+/* レスポンシブ対応 */
+/* 最小幅600px以上のデザイン */
+/* メディアクエリ */
+/* ブレイクポイント */
+@media (min-width: 600px) {
+    
+
+    #content {
+        background-image: url(../images/index.jpg);
+        background-size: 100%;
+        height: 100%;
+        color: #F7F6FA;
+        letter-spacing: 0.05rem;
+    }
+    
+    #content section {
+        margin: 0;
+        backdrop-filter: blur(3px);
+        background-color: rgba(29,14,11,0.5);
+    }
+    
+    #content section article {
+        margin-left: 20px;
+    }
+    
+    #content img {
+        display: none;
+    }
+
+    article {
+        width: 33%;
+    }
+
+    article h4 {
+        font-size: 18px;
+    }
+
+    article p {
+        margin-left: 1.5rem;
+    }
+}

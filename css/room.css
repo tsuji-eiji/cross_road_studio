@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+* {/* 枠線・うち余白を込みで計算*/
+    box-sizing: border-box;
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+section {
+    width: 95%;
+}
+
+
+.sub-nav ul li {
+    width: 33%;
+}
+
+.guide {
+    margin-top: 20px;
+    height: 300px;
+}
+
+.guide-word {
+    height: 100px
+}
+
+.guide img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-top: 20px;
+}
+
+.tbl {
+    margin-top: 60px;
+}
+
+.btn {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+/* レスポンシブ対応 */
+/* 最小幅600px以上のデザイン */
+/* メディアクエリ */
+/* ブレイクポイント */
+@media (min-width: 600px) {
+
+    section {
+        display: flex;
+    }
+    
+    article {
+        width: 30%;
+        margin-top: 0;
+    }
+    
+    h4 {
+        font-size: 1.4rem;
+    }
+    
+    .guide-word p {
+        font-size: 1.1rem;
+    }
+}
