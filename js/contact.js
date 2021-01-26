@@ -32,38 +32,42 @@ function reserve() {
     const start = param.start.value;
     const number = param.number.value;
     const time = param.time.value;
+	const errClr = 'rgba(240,65,86,0.55)';
+	//リフレッシュ
+	param.name.style.background = null;
+	param.tel.style.background = null;
+	param.date.style.background = null;
+	param.studio.style.background = null;
+	param.number.style.background = null;
     //入力チェック
     const msg = new Array;
     //名前
     if (name == '') {
         msg.push('名前を入力してください。');
-        param.name.style.background = 'rgba(240,65,86,0.55)';
+        param.name.style.background = errClr;
     }
     //電話番号
     if (tel == '') {
         msg.push('電話番号を入力してください。');
-        param.tel.style.background = 'rgba(240,65,86,0.55)';
-    } else if (!libphonenumber.isValidNumber(tel, 'JP')) {
-        msg.push('正しい電話番号を入力してください。');
-        param.tel.style.background = 'rgba(240,65,86,0.55)';
+        param.tel.style.background = errClr;
     }
     //日程
     if (date == '') {
         msg.push('日程を入力してください。');
-        param.date.style.background = 'rgba(240,65,86,0.55)';
+        param.date.style.background = errClr;
     }
     //希望スタジオ
     if (studio == '') {
         msg.push('希望スタジオを選択してください。');
-        param.studio.style.background = 'rgba(240,65,86,0.55)';
+        param.studio.style.background = errClr;
     }
     //人数
     if (number == '') {
         msg.push('人数を入力してください。');
-        param.number.style.background = 'rgba(240,65,86,0.55)';
+        param.number.style.background = errClr;
     } else if (number < 1) {
         msg.push('正しい人数を入力してください。');
-        param.number.style.background = 'rgba(240,65,86,0.55)';
+        param.number.style.background = errClr;
     }
 
     //エラーメッセージ表示
