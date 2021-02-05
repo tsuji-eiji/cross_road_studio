@@ -82,7 +82,7 @@
                             <label for="id">会員番号</label>
                         </th>
                         <td class="td2">
-                            <input type="text" name="id">
+                            <input type="text" name="id" maxlength="8">
                         </td>
                     </tr>
                     <tr>
@@ -90,11 +90,11 @@
                             <label for="password">パスワード</label>
                         </th>
                         <td>
-                            <input type="password" name="password">
+                            <input type="password" name="password" maxlength="8">
                         </td>
                     </tr>
                 </table>
-                <button type="button" class="btn" onclick="search()">
+                <button id="callBtn" type="button" class="btn">
                     会員情報呼出
                 </button>
                 <table class="tbl">
@@ -173,7 +173,7 @@
                             <label for="number">ご利用人数</label>
                         </th>
                         <td>
-                            <input type="number" id="number">名
+                            <input type="text" id="number" maxlength="1">名
                         </td>
                     </tr>
                     <tr>
@@ -195,7 +195,7 @@
                         </td>
                     </tr>
                 </table>
-                <button type="submit" class="btn" form="data-form" onclick="return reserve()" onsubmit="sent.html">送信</button>
+                <button id="submitBtn" type="button" class="btn" form="data-form">送信</button>
             </form>
         </div>
     </main>
