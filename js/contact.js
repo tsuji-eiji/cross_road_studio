@@ -55,7 +55,7 @@ document.getElementById('callBtn').addEventListener('click', function () {
 	}
 });
 
-document.getElementById('submitBtn').addEventListener('click', function () {
+function reserve() {
 	//パラメータ取得
 	const param = document.getElementById('data-form');
 	const name = param.name.value;
@@ -122,4 +122,4 @@ document.getElementById('submitBtn').addEventListener('click', function () {
 	} else {
 		return true;
 	}
-});
+};

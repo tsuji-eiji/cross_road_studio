@@ -56,5 +56,5 @@ function reserve() {
 
 
 	//完了画面へ遷移
-	location.href = 'sent.html';
+	return true;
 }
