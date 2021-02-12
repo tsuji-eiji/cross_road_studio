@@ -61,28 +61,10 @@ body {
     background-color: #1D0E0B;
 }
 
-#menu {
-    position: fixed;
-    width: 80px;
-    height: 70px;
-    line-height: 70px;
-    right: 35px;
-    bottom: 30px;
-    text-align: center;
-    vertical-align: middle;
-    background-color: rgba(34, 34, 34, 0.9);
-    color: #F7F6FA;
-    cursor: pointer;
-}
+
 
 nav {
-    position: fixed;
-    right: -170px;
-    top: 0;
-    background-color: #222;
-    width: 170px;
     height: 100%;
-    transition: transform .5s;
 }
 
 nav ul {
@@ -99,10 +81,10 @@ nav ul li a {
     text-decoration: none;
     text-align: center;
     color: #F7F6FA;
-    margin: 10px 0;
+/*    margin: 10px 0;*/
     background-color: #1D0E0B;
     padding: .80rem 0;
-    font-size: 1.3rem;
+    font-size: .8rem;
 }
 
 
@@ -112,7 +94,6 @@ nav ul li a {
 }
 
 
-/*
 nav,
 .sub-nav {
     background-color: #1D0E0B;
@@ -136,12 +117,11 @@ nav ul li,
 nav ul li a,
 .sub-nav ul li a {
     display: block;
-    padding: 0.8rem;
+    padding: 1rem .8rem;
     text-decoration: none;
     color: #F7F6FA;
     background-color: #1D0E0B;
 }
-*/
 
 
 #sub-title {

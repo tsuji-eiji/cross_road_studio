@@ -2,215 +2,210 @@
 <html lang="ja">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="description" content="大阪市北区にある架空の音楽スタジオ">
-    <title>Contact</title>
-    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
-    <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/contact.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap" rel="stylesheet">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta name="description" content="大阪市北区にある架空の音楽スタジオ">
+	<title>Contact</title>
+	<link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/contact.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
-    <header>
-        <div id="title">
-            <a href="index.html">
-                <h1>
-                    CROSS ROAD STUDIO
-                </h1>
-                <h3>〜大阪府大阪市北区の音楽スタジオ〜</h3>
-            </a>
-        </div>
-        <nav id="nav">
-            <ul>
-                <li><a href="room.html">ROOM</a></li>
-                <li><a href="price.html">PRICE</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
-                <li><a href="recording.html">RECORDING</a></li>
-            </ul>
-        </nav>
-        <div id="menu" class="menu-btn">
-            <h2>MENU</h2>
-        </div>
-        <div id="sub-title">
-            <h1>Contact</h1>
-            <h5>～ご予約～</h5>
-        </div>
-        <div class="nav sub-nav">
-        </div>
-    </header>
-    <main>
-        <section>
-            <article>
-                <h2>ご予約について</h2>
-                <p>
-                    スタジオ予約はこちらのフォームよりご予約ください。<br>
-                    なお、店頭にて会員登録いただいたお客様は会員番号と
-                    パスワードを入力いただきますと、氏名と電話番号が自動入力されます。<br>
-                    ※9時間以上のご予約はお電話にて承ります。<br>
-                </p>
-            </article>
-            <article>
-                <h2>キャンセルについて</h2>
-                <p>
-                    キャンセルの場合は店舗まで直接お電話ください。<br>
-                    キャンセル料は以下の表の通りになります。
-                </p>
-                <table class="tbl" id="cancel-tbl">
-                    <caption><strong>キャンセル料一覧</strong></caption>
-                    <tr>
-                        <th>8日前まで</th>
-                        <th>7日前~前日</th>
-                        <th>当日</th>
-                    </tr>
-                    <tr>
-                        <td>無料</td>
-                        <td>50%</td>
-                        <td>100%</td>
-                    </tr>
-                </table>
-            </article>
-        </section>
-        <div class="form-tbl">
-            <form action="sent.html" id="data-form">
-                <table class="tbl">
-                    <tr>
-                        <th class="td1">
-                            <label for="id">会員番号</label>
-                        </th>
-                        <td class="td2">
-                            <input type="text" name="id" maxlength="8">
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>
-                            <label for="password">パスワード</label>
-                        </th>
-                        <td>
-                            <input type="password" name="password" maxlength="8">
-                        </td>
-                    </tr>
-                </table>
-                <button id="callBtn" type="button" class="btn">
-                    会員情報呼出
-                </button>
-                <table class="tbl">
-                    <tr>
-                        <th class="td1">
-                            <label for="name">氏名</label>
-                        </th>
-                        <td class="td2">
-                            <input type="text" id="name">
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>
-                            <label for="tel">電話番号</label>
-                        </th>
-                        <td>
-                            <input type="text" id="tel">
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>
-                            <label for="date">日程</label>
-                        </th>
-                        <td>
-                            <input type="date" class="date" id="date">
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>
-                            <label for="studio">希望スタジオ</label>
-                        </th>
-                        <td>
-                            <select name="room" id="studio">
-                                <option value="a">Ast</option>
-                                <option value="b">Bst</option>
-                                <option value="c">Cst</option>
-                            </select>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>
-                            <label for="start">開始時刻</label>
-                        </th>
-                        <td>
-                            <select name="start" id="start">
-                                <option value="0" id="0">0</option>
-                                <option value="1" id="1">1</option>
-                                <option value="2" id="2">2</option>
-                                <option value="3" id="3">3</option>
-                                <option value="4" id="4">4</option>
-                                <option value="5" id="5">5</option>
-                                <option value="6" id="6">6</option>
-                                <option value="7" id="7">7</option>
-                                <option value="8" id="8">8</option>
-                                <option value="9" id="9">9</option>
-                                <option value="10" id="10">10</option>
-                                <option value="11" id="11">11</option>
-                                <option value="12" id="12">12</option>
-                                <option value="13" id="13">13</option>
-                                <option value="14" id="14">14</option>
-                                <option value="15" id="15">15</option>
-                                <option value="16" id="16">16</option>
-                                <option value="17" id="17">17</option>
-                                <option value="18" id="18">18</option>
-                                <option value="19" id="19">19</option>
-                                <option value="20" id="20">20</option>
-                                <option value="21" id="21">21</option>
-                                <option value="22" id="22">22</option>
-                                <option value="23" id="23">23</option>
-                            </select>
-                            時〜
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>
-                            <label for="number">ご利用人数</label>
-                        </th>
-                        <td>
-                            <input type="text" id="number" maxlength="1">名
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>
-                            <label for="time">ご利用時間</label>
-                        </th>
-                        <td>
-                            <select name="time" id="time">
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                                <option value="6">6</option>
-                                <option value="7">7</option>
-                                <option value="8">8</option>
-                            </select>
-                            時間
-                        </td>
-                    </tr>
-                </table>
-                <button id="submitBtn" type="button" class="btn" form="data-form">送信</button>
-            </form>
-        </div>
-    </main>
-    <footer>
-        <small>
-            大阪府大阪市北区〇〇町1-2-3梅田ビル4F<br>
-            TEL 06-1234-5678<br>
-            &copy; 2020 CROSS ROAD STUDIO
-        </small>
-    </footer>
-    <!--js読み込み-->
-    <script src="js/common.js"></script>
-    <script src="js/contact.js"></script>
+	<header>
+		<div id="title">
+			<a href="index.html">
+				<h1>
+					CROSS ROAD STUDIO
+				</h1>
+				<h3>〜大阪府大阪市北区の音楽スタジオ〜</h3>
+			</a>
+		</div>
+		<nav id="nav">
+			<ul>
+				<li><a href="room.html">ROOM</a></li>
+				<li><a href="price.html">PRICE</a></li>
+				<li><a href="contact.html">CONTACT</a></li>
+				<li><a href="recording.html">RECORDING</a></li>
+			</ul>
+		</nav>
+		<div id="sub-title">
+			<h1>Contact</h1>
+			<h5>～ご予約～</h5>
+		</div>
+		<div class="nav sub-nav">
+		</div>
+	</header>
+	<main>
+		<section>
+			<article>
+				<h2>ご予約について</h2>
+				<p>
+					スタジオ予約はこちらのフォームよりご予約ください。<br>
+					なお、店頭にて会員登録いただいたお客様は会員番号と
+					パスワードを入力いただきますと、氏名と電話番号が自動入力されます。<br>
+					※9時間以上のご予約はお電話にて承ります。<br>
+				</p>
+			</article>
+			<article>
+				<h2>キャンセルについて</h2>
+				<p>
+					キャンセルの場合は店舗まで直接お電話ください。<br>
+					キャンセル料は以下の表の通りになります。
+				</p>
+				<table class="tbl" id="cancel-tbl">
+					<caption><strong>キャンセル料一覧</strong></caption>
+					<tr>
+						<th>8日前まで</th>
+						<th>7日前~前日</th>
+						<th>当日</th>
+					</tr>
+					<tr>
+						<td>無料</td>
+						<td>50%</td>
+						<td>100%</td>
+					</tr>
+				</table>
+			</article>
+		</section>
+		<div class="form-tbl">
+			<form action="sent.html" id="data-form">
+				<table class="tbl">
+					<tr>
+						<th class="td1">
+							<label for="id">会員番号</label>
+						</th>
+						<td class="td2">
+							<input type="text" name="id" maxlength="8">
+						</td>
+					</tr>
+					<tr>
+						<th>
+							<label for="password">パスワード</label>
+						</th>
+						<td>
+							<input type="password" name="password" maxlength="8">
+						</td>
+					</tr>
+				</table>
+				<button id="callBtn" type="button" class="btn">
+					会員情報呼出
+				</button>
+				<table class="tbl">
+					<tr>
+						<th class="td1">
+							<label for="name">氏名</label>
+						</th>
+						<td class="td2">
+							<input type="text" id="name">
+						</td>
+					</tr>
+					<tr>
+						<th>
+							<label for="tel">電話番号</label>
+						</th>
+						<td>
+							<input type="text" id="tel">
+						</td>
+					</tr>
+					<tr>
+						<th>
+							<label for="date">日程</label>
+						</th>
+						<td>
+							<input type="date" class="date" id="date">
+						</td>
+					</tr>
+					<tr>
+						<th>
+							<label for="studio">希望スタジオ</label>
+						</th>
+						<td>
+							<select name="room" id="studio">
+								<option value="a">Ast</option>
+								<option value="b">Bst</option>
+								<option value="c">Cst</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<th>
+							<label for="start">開始時刻</label>
+						</th>
+						<td>
+							<select name="start" id="start">
+								<option value="0" id="0">0</option>
+								<option value="1" id="1">1</option>
+								<option value="2" id="2">2</option>
+								<option value="3" id="3">3</option>
+								<option value="4" id="4">4</option>
+								<option value="5" id="5">5</option>
+								<option value="6" id="6">6</option>
+								<option value="7" id="7">7</option>
+								<option value="8" id="8">8</option>
+								<option value="9" id="9">9</option>
+								<option value="10" id="10">10</option>
+								<option value="11" id="11">11</option>
+								<option value="12" id="12">12</option>
+								<option value="13" id="13">13</option>
+								<option value="14" id="14">14</option>
+								<option value="15" id="15">15</option>
+								<option value="16" id="16">16</option>
+								<option value="17" id="17">17</option>
+								<option value="18" id="18">18</option>
+								<option value="19" id="19">19</option>
+								<option value="20" id="20">20</option>
+								<option value="21" id="21">21</option>
+								<option value="22" id="22">22</option>
+								<option value="23" id="23">23</option>
+							</select>
+							時〜
+						</td>
+					</tr>
+					<tr>
+						<th>
+							<label for="number">ご利用人数</label>
+						</th>
+						<td>
+							<input type="text" id="number" maxlength="1">名
+						</td>
+					</tr>
+					<tr>
+						<th>
+							<label for="time">ご利用時間</label>
+						</th>
+						<td>
+							<select name="time" id="time">
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+								<option value="6">6</option>
+								<option value="7">7</option>
+								<option value="8">8</option>
+							</select>
+							時間
+						</td>
+					</tr>
+				</table>
+				<button id="submitBtn" type="button" class="btn" form="data-form">送信</button>
+			</form>
+		</div>
+	</main>
+	<footer>
+		<small>
+			大阪府大阪市北区〇〇町1-2-3梅田ビル4F<br>
+			TEL 06-1234-5678<br>
+			&copy; 2020 CROSS ROAD STUDIO
+		</small>
+	</footer>
+	<!--js読み込み-->
+	<script src="js/common.js"></script>
+	<script src="js/contact.js"></script>
 
 
-</body>
-
-</html>
+</body></html>
